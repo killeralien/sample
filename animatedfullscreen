@@ -1,0 +1,509 @@
+LucilleAustin.com
+======
+
+HTML CSS  animated responsive full screen splash page 
+
+Simple animated splash page for website created by Sean Kennedy. Using a  of some DRY and other modular bits as well as custom code. 
+
+From a concept my wife came up with of showing a drawing come to as a photograph without using FLASH. 
+
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+	<meta name="title" content"Lucille Patio Lounge - Where time stands chill.">
+	<meta name="description" content="Lucille is  a charming renovated lounge bar in the Austin Rainey Street district. We're the perfect venue for a private event. If you want to experience a chill time, come to our large shaded outdoor patio and hang out on our hammocks.">
+	<meta name="keywords" content="Lucille patio lounge, rainey street bars, rainey steet patio bar, rainey street dog driendly bars, dog friendly bars in austin, rainey street venue, austin bar for booking, large patio bars in austin, lucille austin, lucille bar, rainey street, rainey street patio bars, rainey street lounges, austin lounge, rainey street district, rainey street lounge,">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-43075165-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	
+	<script type="text/javascript">
+	function move()
+	{
+	window.location = 'http://lucilleaustin.com/lucille.html'
+	}
+	</script>
+	
+	<style>
+	body {
+		background-color: #333333;
+	}
+	img {
+		width:100%; 
+		height:100%;
+		padding: 0;
+		border: none;
+	}
+	
+	#front_wrapper  {
+		margin: 0 auto;
+	  width: 100%;
+	}
+
+	#front_wrapper img {
+		border: none;
+	}
+
+	#menu1 {
+	  animation: flyin .8s ease-in 0s 1 forwards;
+	  -webkit-animation: flyin .8s ease-in 0s 1 forwards; /* Safari */
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(.98,.98);
+		-moz-transform: scale(.98,.98);
+		-webkit-transform: scale(.98,.98);
+		position: absolute;
+		z-index: 0;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     transform: scale(1, 1);
+			 -moz-transform: scale(1, 1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin {          
+	   to { 
+	     transform: scale(1, 1);
+			 -webkit-transform: scale(1, 1);
+	     opacity: 1;
+			 -webkit-opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	#menu2 {
+	  animation: flyin 1s ease-in .5s 1 forwards;
+	  -webkit-animation: flyin 1s ease-in .5s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(.99,.99);
+		-moz-transform: scale(.99,.99);
+		-webkit-transform: scale(.99,.99);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+	
+	#menu3 {
+	  animation: flyin 1.5s ease-in 1.4s 1 forwards;
+	  -webkit-animation: flyin 1.5s ease-in 1.4s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+	
+	#menu4 {
+	  animation: flyin 1.8s ease-in 1.6s 1 forwards;
+	  -webkit-animation: flyin 1.8s ease-in 1.6s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+	
+	#menu5 {
+	  animation: flyin 1.4s ease-in 1.7s 1 forwards;
+	  -webkit-animation: flyin 1.4s ease-in 1.7s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+	
+	#menu6 {
+	  animation: flyin 1.3s ease-in 2.3s 1 forwards;
+	  -webkit-animation: flyin 1.3s ease-in 2.3s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+	
+	#menu7 {
+	  animation: flyin 1.5s ease-in 3s 1 forwards;
+	  -webkit-animation: flyin 1.5s ease-in 3s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+	
+	#menu8 {
+	  animation: flyin 2s ease-in 3.8s 1 forwards;
+	  -webkit-animation: flyin 2s ease-in 3.8s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+	
+	#menu9 {
+	  animation: flyin 1.5s ease-in 4.8s 1 forwards;
+	  -webkit-animation: flyin 1.5s ease-in 4.8s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+	
+	#menu10 {
+	  animation: flyin 2.5s ease-in 5.5s 1 forwards;
+	  -webkit-animation: flyin 2.5s ease-in 5.5s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+	
+	#menu11 {
+	  animation: flyin 2.8s ease-in 6.8s 1 forwards;
+	  -webkit-animation: flyin 2.8s ease-in 6.8s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+	
+	#menu12 {
+	  animation: flyin 6.4s ease-in 8s 1 forwards;
+	  -webkit-animation: flyin 6.4s ease-in 8s 1 forwards;
+	  opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-ms-opacity: 0;
+	  transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		position: absolute;
+		z-index: 2;
+	}
+
+	@keyframes flyin {
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -moz-transform: scale(1,1);
+	     opacity: 1;
+			 -moz-opacity: 1;
+	   }
+	}
+
+	@-webkit-keyframes flyin { /* Safari */
+	   to { 
+	     filter: blur(0);
+	     transform: scale(1,1);
+			 -webkit-transform: scale(1,1);
+	     opacity: 1;
+			 -webkit-opacity: 1;		
+	   }
+	}
+</style>
+	
+<title>Lucille Patio Lounge - Where Time Stands Chill</title>
+</head>
+
+<body onload="timer=setTimeout('move()',17000)"><br /><br /><br /><br />
+		<div id="menu1">
+			<a href="lucille.html"><img src="images/final_01.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu2">
+			<a href="lucille.html"><img src="images/final_02.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu3">
+			<a href="lucille.html"><img src="images/final_03.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu4">
+			<a href="lucille.html"><img src="images/final_04.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu5">
+			<a href="lucille.html"><img src="images/final_05.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu6">
+			<a href="lucille.html"><img src="images/final_06.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu7">
+			<a href="lucille.html"><img src="images/final_07.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu8">
+			<a href="lucille.html"><img src="images/final_08.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu9">
+			<a href="lucille.html"><img src="images/final_09.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu10">
+			<a href="lucille.html"><img src="images/final_10.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu11">
+			<a href="lucille.html"><img src="images/final_11.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+		<div id="menu12">
+			<a href="lucille.html"><img src="images/final_12.jpg" alt="Lucille House on Rainey Street"></a>
+		</div>
+</body></html>
